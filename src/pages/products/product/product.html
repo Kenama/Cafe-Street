@@ -1,16 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="notification-bar">
-        <span class="notification-icon">⏳</span>
-        <span class="notification-text">30% off storewide — Limited time!</span>
-        <button class="close-btn">X</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3legant | Home</title>
+    <!-- Link -->
+    <link rel="stylesheet" href="/src/assets/css/global-styles/styles.css" />
+  </head>
+  <body>
+    <!-- Wrapper -->
+    <div class="wrapper">
+      <!-- Notification bar -->
+      <div class="notification-bar">
+        <img src="/src/assets/img/icon-discount.svg" alt="" />
+        30% off storewide — Limited time!
       </div>
+            <!-- Product -->          
+            <div class="product-info">          
+              <!-- Price and Timer -->
+              <div class="product-price">
+                <span class="current-price">$199</span>
+                <span class="original-price">$400</span>
+              </div>
+          
+              <div class="countdown">
+                <span>Expires in:</span>
+                <span id="timer">02:12:45</span>
+              </div>
+          
+              <!-- Description -->
+              <div class="product-description">
+                <p>Buy one today and make every space way to stay more convenient...</p>
+                <p>Measurements</p>
+                <label for="color-select">Color</label>
+                <select id="color-select">
+                  <option value="black">Black</option>
+                </select>
+              </div>
+          
+              <!-- Add to Cart -->
+              <div class="add-to-cart">
+                <button class="add-to-cart-btn">Add to Cart</button>
+                <button class="add-to-wishlist-btn">Add to Wishlist</button>
+              </div>
+          
+              <!-- Reviews Section -->
+              <div class="product-reviews">
+                <span>Reviews</span>
+                <button class="share-feedback">Share your thoughts</button>
+              </div>
+            </div>
       
-</body>
+      <!-- Header -->
+      <div class="header"></div>
+      <!-- Slider -->
+      <div class="slider"></div>
+      <!-- Footer -->
+      <div class="footer"></div>
+    </div>
+  </body>
 </html>
