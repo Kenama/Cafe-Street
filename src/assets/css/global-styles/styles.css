@@ -9,11 +9,11 @@
 /* ---------------------------------------------------------- */
 
 /* Partials */
-@import url(/src/assets/css/partials/header.css);
 @import url(/src/assets/css/partials/notification-bar.css);
+@import url(/src/assets/css/partials/header.css);
 
 /* Reset */
-@import url(/src/assets/css/reset.css);
+@import url(/src/assets/css/global-styles/reset.css);
 
 /* Varriables */
 /* ---------------------------------------------------------- */
@@ -21,12 +21,27 @@
 :root {
   /* Colors */
   --main-bg: ;
-  --sec-bg: ;
+  --sec-bg-neutral: #f3f5f7;
+  --color-p: #343839;
 
   /* Fonts */
   --main-font: "Inter", sans-serif;
   --sec-font: "Poppins", sans-serif;
   --acc-font: "Space Grotesk", sans-serif;
+
+  /* Font sizes */
+  --f-size-h1: 40px;
+  --f-size-h2: 34px;
+  --f-size-h3: 28px;
+  --f-size-prim-p: 16px;
+  --f-size-sec-p: 14px;
+  --f-size-acc: 12px;
+
+  /* Font weights */
+  --f-weight-bold: 700;
+
+  /* Padding */
+  --main-padding: 32px;
 }
 
 /* Content */
@@ -34,5 +49,6 @@
 
 /* Wrapper */
 .wrapper {
+  margin: 0 auto;
   width: 375px;
 }
