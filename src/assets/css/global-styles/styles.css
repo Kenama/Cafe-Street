@@ -9,24 +9,54 @@
 /* ---------------------------------------------------------- */
 
 /* Partials */
-@import url(/src/assets/css/partials/header.css);
 @import url(/src/assets/css/partials/notification-bar.css);
+@import url(/src/assets/css/partials/header.css);
+/* --------- */
+@import url(/src/assets/css/partials/form.css);
+@import url(/src/assets/css/partials/footer.css);
 
 /* Reset */
-@import url(/src/assets/css/reset.css);
+@import url(/src/assets/css/global-styles/reset.css);
 
 /* Varriables */
 /* ---------------------------------------------------------- */
 
 :root {
   /* Colors */
-  --main-bg: ;
-  --sec-bg: ;
+  --black-bg: #232627;
+  --neutral-bg: #f3f5f7;
+  --color-text: #141718;
+  --color-gray: #343839;
+  --color-acc: #6c7275;
 
   /* Fonts */
   --main-font: "Inter", sans-serif;
   --sec-font: "Poppins", sans-serif;
   --acc-font: "Space Grotesk", sans-serif;
+
+  /* Font sizes */
+  --f-size-h1: 40px;
+  --f-size-h2: 34px;
+  --f-size-h3: 28px;
+  --f-size-p: 16px;
+  --f-size-sec-p: 14px;
+  --f-size-acc: 12px;
+
+  /* Font weights */
+  --f-weight-bolder: 700;
+  --f-weight-bold: 600;
+  --f-weight-semibold: 500;
+
+  /* Line height */
+  --lh-h1: 110%;
+  --lh-h2: 112%;
+  --lh-h3: 121%;
+  --lh-prim-p: 162%;
+  --lh-sec-p: 157%;
+  --lh-acc-p: 167%;
+
+  /* Padding */
+  --main-padding: 32px;
 }
 
 /* Content */
@@ -34,5 +64,17 @@
 
 /* Wrapper */
 .wrapper {
+  margin: 0 auto;
   width: 375px;
+}
+
+/* Logo */
+.logo {
+  font-family: var(--sec-font);
+  font-weight: var(--f-weight-semibold);
+}
+
+/* Highlight */
+.highlight {
+  color: var(--color-acc);
 }
