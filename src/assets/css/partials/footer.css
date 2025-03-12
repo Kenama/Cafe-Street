@@ -1,0 +1,72 @@
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 48px 32px;
+  background: var(--black-bg);
+}
+
+/* Logo */
+footer .logo {
+  font-size: 24px;
+  color: #fff;
+}
+
+/* Devider */
+footer hr {
+  height: 1px;
+  width: 24px;
+  background: var(--color-acc);
+  margin: 0 auto;
+  margin-block: 16px;
+}
+
+/* Slogan */
+footer p {
+  font-family: var(--main-font);
+  font-size: var(--f-size-sec-p);
+  line-height: var(--lh-sec-p);
+  color: #e8ecef;
+  margin-bottom: 40px;
+}
+
+/* Nav */
+footer nav {
+  font-family: var(--main-font);
+  font-size: var(--f-size-sec-p);
+  line-height: var(--lh-sec-p);
+  margin-bottom: 40px;
+}
+footer nav li {
+  color: #fefefe;
+  margin-bottom: 32px;
+}
+footer nav li:last-child {
+  margin-bottom: 0;
+}
+
+/* Bottom */
+.bottom {
+  padding-block: 24px 0;
+  border-top: 1px solid var(--color-acc);
+  font-family: var(--sec-font);
+  font-size: var(--f-size-acc);
+}
+
+/* Social media */
+.social-media {
+  display: flex;
+  gap: 26px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+/* Info */
+.info {
+  display: flex;
+  justify-content: center;
+  font-weight: var(--f-weight-bold);
+  color: #fefefe;
+  gap: 28px;
+  margin-bottom: 28px;
+}

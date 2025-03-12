@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   padding-block: 8px;
-  background: var(--sec-bg-neutral);
+  background: var(--neutral-bg);
 }
 
 /* Close button */
@@ -22,5 +22,5 @@
   font-family: var(--main-font);
   font-size: var(--f-size-acc);
   margin-inline: 8px 22px;
-  color: var(--color-p);
+  color: var(--color-gray);
 }
