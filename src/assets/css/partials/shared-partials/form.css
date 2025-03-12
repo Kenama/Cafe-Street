@@ -2,8 +2,8 @@
 
 /* Wrapper */
 .form {
-  padding: 95px var(--main-padding);
-  background: var(--neutral-bg);
+  padding: 95px var(--padding-horizontal);
+  background: var(--bg-neutral);
   text-align: center;
 }
 
@@ -12,16 +12,16 @@
   padding-bottom: 32px;
 }
 .form-header h3 {
-  font-weight: var(--f-weight-semibold);
-  font-size: var(--f-size-h3);
-  font-family: var(--sec-font);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-h3);
+  font-family: var(--font-sec);
   line-height: var(--lh-h3);
   margin-bottom: 8px;
 }
 .form-header p {
-  font-family: var(--main-font);
-  font-size: var(--f-size-sec-p);
-  line-height: var(--lh-sec-p);
+  font-family: var(--font-main);
+  font-size: var(--fs-p-sec);
+  line-height: var(--lh-p-sec);
 }
 
 /* Actual form */
@@ -32,13 +32,13 @@
   gap: 8px;
   padding-block: 12px;
   border-bottom: 1px solid;
-  font-family: var(--main-font);
-  font-size: var(--f-size-p);
+  font-family: var(--font-main);
+  font-size: var(--fs-p);
 }
 .form input[type="text"],
 .form input[type="submit"] {
   line-height: 175%;
   letter-spacing: -0.03em;
-  font-size: var(--f-size-p);
+  font-size: var(--fs-p);
   color: var(--color-acc);
 }

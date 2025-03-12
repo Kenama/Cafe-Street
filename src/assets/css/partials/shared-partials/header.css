@@ -2,8 +2,8 @@
 
 .header {
   display: flex;
-  font-family: var(--main-font);
-  font-size: var(--f-size-p);
+  font-family: var(--font-main);
+  font-size: var(--fs-p);
   padding: 16px 32px;
   gap: 163px;
   justify-content: center;
@@ -26,8 +26,8 @@
 /* Counter */
 .counter {
   background: #000000;
-  font-weight: var(--f-weight-bold);
-  font-size: var(--f-size-acc);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-acc);
   padding: 5px 6px;
   line-height: 83%;
   color: #fff;
