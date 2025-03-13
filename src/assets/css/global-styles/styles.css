@@ -8,58 +8,64 @@
 /* Imports */
 /* ---------------------------------------------------------- */
 
-/* Partials */
-@import url(/src/assets/css/partials/notification-bar.css);
-@import url(/src/assets/css/partials/header.css);
-/* --------- */
-@import url(/src/assets/css/partials/form.css);
-@import url(/src/assets/css/partials/footer.css);
-
 /* Reset */
 @import url(/src/assets/css/global-styles/reset.css);
+
+/* Shared Partials */
+@import url(/src/assets/css/partials/shared-partials/notification-bar.css);
+@import url(/src/assets/css/partials/shared-partials/header.css);
+@import url(/src/assets/css/partials/shared-partials/form.css);
+@import url(/src/assets/css/partials/shared-partials/footer.css);
+
+/* Home partials */
+@import url(/src/assets/css/partials/home-partials/quote.css);
+@import url(/src/assets/css/partials/home-partials/categories.css);
 
 /* Varriables */
 /* ---------------------------------------------------------- */
 
 :root {
-  /* Colors */
-  --black-bg: #232627;
-  --neutral-bg: #f3f5f7;
+  /* Colors | bg/color : purpose */
+  --bg-black: #232627;
+  --bg-neutral: #f3f5f7;
   --color-text: #141718;
   --color-gray: #343839;
   --color-acc: #6c7275;
 
-  /* Fonts */
-  --main-font: "Inter", sans-serif;
-  --sec-font: "Poppins", sans-serif;
-  --acc-font: "Space Grotesk", sans-serif;
+  /* Fonts | font : purpose */
+  --font-main: "Inter", sans-serif;
+  --font-sec: "Poppins", sans-serif;
+  --font-acc: "Space Grotesk", sans-serif;
 
-  /* Font sizes */
-  --f-size-h1: 40px;
-  --f-size-h2: 34px;
-  --f-size-h3: 28px;
-  --f-size-p: 16px;
-  --f-size-sec-p: 14px;
-  --f-size-acc: 12px;
+  /* Font sizes | fs : purpose : order */
+  --fs-h1: 40px;
+  --fs-h2: 34px;
+  --fs-h3: 28px;
+  --fs-p: 16px;
+  --fs-p-sec: 14px;
+  --fs-acc: 12px;
 
-  /* Font weights */
-  --f-weight-bolder: 700;
-  --f-weight-bold: 600;
-  --f-weight-semibold: 500;
+  /* Font weights | fw : purpose */
+  --fw-bolder: 700;
+  --fw-bold: 600;
+  --fw-semibold: 500;
 
-  /* Line height */
+  /* Line height | lh : purpose : order */
   --lh-h1: 110%;
   --lh-h2: 112%;
   --lh-h3: 121%;
-  --lh-prim-p: 162%;
-  --lh-sec-p: 157%;
-  --lh-acc-p: 167%;
+  --lh-p: 162%;
+  --lh-p-sec: 157%;
+  --lh-p-acc: 167%;
 
-  /* Padding */
-  --main-padding: 32px;
+  /* Padding | padding : purpose */
+  --padding-horizontal: 32px;
+
+  /* Margin | margin : purpose */
+  --margin-vertical: 40px;
 }
 
-/* Content */
+/* Elements */
 /* ---------------------------------------------------------- */
 
 /* Wrapper */
@@ -70,8 +76,8 @@
 
 /* Logo */
 .logo {
-  font-family: var(--sec-font);
-  font-weight: var(--f-weight-semibold);
+  font-family: var(--font-sec);
+  font-weight: var(--fw-semibold);
 }
 
 /* Highlight */

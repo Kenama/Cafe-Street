@@ -1,0 +1,29 @@
+/* Quote */
+
+.quote {
+  margin-bottom: var(--margin-vertical);
+  padding-inline: var(--padding-horizontal);
+}
+
+/* Header */
+.quote h1 {
+  font-family: var(--font-sec);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-h1);
+  letter-spacing: -0.01em;
+  margin-bottom: 16px;
+}
+
+/* Text */
+.quote p {
+  font-family: var(--font-main);
+  font-weight: var(--fw-bold);
+  color: var(--color-acc);
+  font-size: 14px;
+  line-height: 157%;
+}
+
+/* Highlight */
+.quote span {
+  color: var(--color-gray);
+}
