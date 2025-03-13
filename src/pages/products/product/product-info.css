@@ -1,0 +1,149 @@
+/* Product Page */
+.product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 32px;
+    gap: 16px;
+    width: 375px;
+    height: 482px;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    width: 253px;
+    height: 20px;
+}
+
+.breadcrumbs a {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: #605F5F;
+    text-decoration: none;
+}
+
+.breadcrumbs a.active {
+    color: #121212;
+}
+
+.product-details {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.product-image img {
+    width: 100%;
+    max-width: 311px;
+    height: 414px;
+    object-fit: cover;
+}
+
+/* Discount Badges */
+.product-discount {
+    display: flex;
+    gap: 10px;
+}
+
+.new-badge, .discount-badge {
+    padding: 8px 18px;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 4px;
+    color: #FEFEFE;
+}
+
+.new-badge {
+    background: #FFFFFF;
+    color: #121212;
+}
+
+.discount-badge {
+    background: #38CB89;
+}
+
+/* Price Section */
+.product-price {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.current-price {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+}
+
+/* Countdown Timer */
+.countdown {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Product Description */
+.product-description {
+    font-size: 16px;
+}
+
+.product-description a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+/* Add to Cart Buttons */
+.add-to-cart {
+    display: flex;
+    gap: 10px;
+}
+
+.add-to-cart-btn, .add-to-wishlist-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+}
+
+.add-to-cart-btn:hover, .add-to-wishlist-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Reviews Section */
+.product-reviews {
+    font-size: 16px;
+}
+
+.share-feedback {
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid #007bff;
+    background-color: white;
+}
+
+.share-feedback:hover {
+    background-color: #f0f0f0;
+}
+
+/* Color Select */
+.color-select {
+    padding: 8px;
+    font-size: 16px;
+}
+
+/* Timer */
+#timer {
+    font-weight: bold;
+}
