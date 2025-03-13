@@ -16,6 +16,13 @@
   align-items: center;
 }
 
+/* Burger menu button */
+.burger-menu-button {
+  width: 24px;
+  height: 24px;
+  background: url(/src/assets/img/icon-burger-menu.svg) no-repeat;
+}
+
 /* Shopping cart */
 .shopping-cart {
   display: flex;

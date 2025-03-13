@@ -2,6 +2,7 @@
 
 .quote {
   margin-bottom: var(--margin-vertical);
+  padding-inline: var(--padding-horizontal);
 }
 
 /* Header */

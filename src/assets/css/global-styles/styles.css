@@ -19,12 +19,13 @@
 
 /* Home partials */
 @import url(/src/assets/css/partials/home-partials/quote.css);
+@import url(/src/assets/css/partials/home-partials/categories.css);
 
 /* Varriables */
 /* ---------------------------------------------------------- */
 
 :root {
-  /* Colors | bg/color : purpose */ 
+  /* Colors | bg/color : purpose */
   --bg-black: #232627;
   --bg-neutral: #f3f5f7;
   --color-text: #141718;
