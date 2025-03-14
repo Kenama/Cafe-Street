@@ -61,6 +61,7 @@
 
   /* Padding | padding : purpose */
   --padding-horizontal: 32px;
+  --padding-vertical: 32px;
 
   /* Margin | margin : purpose */
   --margin-vertical: 40px;
@@ -84,4 +85,14 @@
 /* Highlight */
 .highlight {
   color: var(--color-acc);
+}
+
+/* Block header */
+.block-header {
+  font-family: var(--font-sec);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
+  letter-spacing: -0.02em;
+  margin-bottom: 40px;
 }
