@@ -9,17 +9,17 @@
 /* ---------------------------------------------------------- */
 
 /* Reset */
-@import url(/src/assets/css/global-styles/reset.css);
+@import url(/src/assets/css/base/reset.css);
 
 /* Shared Partials */
-@import url(/src/assets/css/partials/shared-partials/notification-bar.css);
-@import url(/src/assets/css/partials/shared-partials/header.css);
-@import url(/src/assets/css/partials/shared-partials/form.css);
-@import url(/src/assets/css/partials/shared-partials/footer.css);
+@import url(/src/assets/css/components/shared-components/notification-bar.css);
+@import url(/src/assets/css/components/shared-components/header.css);
+@import url(/src/assets/css/components/shared-components/form.css);
+@import url(/src/assets/css/components/shared-components/footer.css);
 
 /* Home partials */
-@import url(/src/assets/css/partials/home-partials/quote.css);
-@import url(/src/assets/css/partials/home-partials/categories.css);
+@import url(/src/assets/css/components/home-components/quote.css);
+@import url(/src/assets/css/components/home-components/categories.css);
 
 /* Varriables */
 /* ---------------------------------------------------------- */
@@ -65,7 +65,7 @@
   --margin-vertical: 40px;
 }
 
-/* Elements */
+/* General styles */
 /* ---------------------------------------------------------- */
 
 /* Wrapper */
