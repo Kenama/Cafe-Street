@@ -35,21 +35,3 @@
   line-height: 171%;
   color: var(--color-text);
 }
-
-/* Category Living Room */
-.category-living-room {
-  background: url(/src/assets/img/image-living-room.png);
-  height: 377px;
-}
-
-/* Category Bedroom */
-.category-bedroom {
-  background: url(/src/assets/img/image-bedroom.png);
-  height: 180px;
-}
-
-/* Category Kitchen */
-.category-kitchen {
-  background: url(/src/assets/img/image-kitchen.png);
-  height: 181px;
-}
