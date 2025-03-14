@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3legant | Home</title>
     <!-- Link -->
-    <link rel="stylesheet" href="/src/assets/css/global-styles/styles.css" />
+    <link rel="stylesheet" href="/src/assets/css/base/styles.css" />
   </head>
   <body>
     <!-- Wrapper -->
     <div class="wrapper">
       <!-- Notification bar -->
       <div class="notification-bar">
-        <img src="/src/assets/img/icon-discount.svg" alt="" />
+        <img src="/src/assets/img/icon-discount.svg" alt="discount" />
         <span>30% off storewide — Limited time!</span>
         <button class="button-close"></button>
       </div>
@@ -20,10 +20,8 @@
       <div class="header">
         <!-- Left -->
         <div class="left">
-          <!-- Burger menu -->
-          <button class="burger-menu">
-            <img src="/src/assets/img/icon-burger-menu.svg" alt="" />
-          </button>
+          <!-- Burger menu button -->
+          <button class="burger-menu-button"></button>
           <!-- Logo -->
           <a href="/src/index.html" class="logo"
             >3legant<span class="highlight">.</span></a
@@ -37,10 +35,26 @@
       </div>
       <!-- Slider -->
       <div class="slider"></div>
-      <!-- Motto -->
-      <div class="slogan"></div>
+      <!-- Quote -->
+      <div class="quote">
+        <!-- Header -->
+        <h1>
+          Simply Unique<span>/</span>
+          <br />
+          Simply Better<span>.</span>
+        </h1>
+        <!-- Text -->
+        <p>
+          <span>3legant</span> is a gift & decorations store based in HCMC,
+          Vietnam. Est since 2019.
+        </p>
+      </div>
       <!-- Categories -->
-      <div class="categories"></div>
+      <div class="categories" id="categories-container"></div>
+      <!-- New Arrivals -->
+      <div class="new-arrivals" id="new-arrivals">
+        <h2>New Arrivals</h2>
+      </div>
       <!-- Pros -->
       <div class="pros"></div>
       <!-- Offer -->
@@ -65,9 +79,11 @@
       <footer>
         <!-- Logo -->
         <div class="logo-block">
-          <a href="/src/index.html" class="logo">3legant<span class="highlight">.</span></a>
+          <a href="/src/index.html" class="logo"
+            >3legant<span class="highlight">.</span></a
+          >
           <!-- Devider -->
-          <hr >
+          <hr />
           <!-- Slogan -->
           <p>Gift & Decoration Store</p>
         </div>
@@ -78,7 +94,7 @@
             <li><a href="">Shop</a></li>
             <li><a href="">Product</a></li>
             <li><a href="">Blog</a></li>
-            <li><a href="">Contact</a> us</li>
+            <li><a href="">Contact us</a></li>
           </ul>
         </nav>
         <!-- Bottom -->
@@ -86,11 +102,11 @@
           <!-- Social media -->
           <div class="social-media">
             <!-- Instagram -->
-            <a href=""><img src="/src/assets/img/icon-insta.svg" alt=""></a>
+            <a href=""><img src="/src/assets/img/icon-insta.svg" alt="" /></a>
             <!-- Facebook -->
-            <a href=""><img src="/src/assets/img/icon-fb.svg" alt=""></a>
+            <a href=""><img src="/src/assets/img/icon-fb.svg" alt="" /></a>
             <!-- Youtube -->
-            <a href=""><img src="/src/assets/img/icon-yt.svg" alt=""></a>
+            <a href=""><img src="/src/assets/img/icon-yt.svg" alt="" /></a>
           </div>
           <!-- Info -->
           <div class="info">
@@ -99,8 +115,9 @@
           </div>
           <p class="copyright">Copyright © 2023 3legant. All rights reserved</p>
         </div>
-        </div>
-      </div>
+      </footer>
     </div>
+
+    <script src="/src/assets/js/index.js"></script>
   </body>
 </html>
