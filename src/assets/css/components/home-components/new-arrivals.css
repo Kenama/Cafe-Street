@@ -1,0 +1,26 @@
+/* New arrivals */
+
+.new-arrivals {
+  padding-inline: var(--padding-horizontal);
+  max-width: 375px;
+  overflow-x: scroll;
+}
+
+.products-container {
+  display: flex;
+  gap: 20px;
+  width: auto;
+}
+
+/* .product {
+    position: absolute;
+} */
+
+.product-image {
+  width: 231px;
+  height: 308px;
+}
+
+.rating {
+  display: flex;
+}
