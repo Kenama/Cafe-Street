@@ -1,3 +1,10 @@
+// Notification bar
+// function closeButton() {
+
+// }
+
+// --------------------------------------------
+
 // CATEGORIES
 
 // data
@@ -26,24 +33,24 @@ const categories = [
 const categoriesContainer = document.getElementById("categories-container");
 
 // data iteration
-categories.forEach((item) => {
-  // creating container
+categories.forEach((category) => {
+  // item container
   const div = document.createElement("div");
   div.classList.add("category");
-  div.style.background = `url("${item.imagePath}")`;
-  div.style.height = item.height;
+  div.style.background = `url("${category.imagePath}")`;
+  div.style.height = category.height;
 
-  // creating header
+  // header
   const header = document.createElement("h3");
   header.classList.add("category-header");
-  header.textContent = item.name;
+  header.textContent = category.name;
   div.appendChild(header);
 
-  // creating button
+  // button
   const link = document.createElement("a");
   link.textContent = "Shop Now";
   link.classList.add("category-button");
-  link.href = item.link;
+  link.href = category.link;
   div.appendChild(link);
 
   // appending element into container
@@ -61,34 +68,70 @@ const products = [
     price: 400,
     discount: 50,
     rating: 5,
-    imagePath: "",
+    imagePath: "/src/assets/img/image-loveseat-sofa.png",
   },
   {
     name: "Table lamp",
     price: 24.99,
     discount: 0,
     rating: 5,
-    imagePath: "",
+    imagePath: "/src/assets/img/image-table-lamp.png",
   },
   {
     name: "Beige table lamp",
     price: 24.99,
     discount: 0,
     rating: 5,
-    imagePath: "",
+    imagePath: "/src/assets/img/image-beige-table-lamp.png",
   },
   {
     name: "Bamboo basket",
     price: 24.99,
     discount: 0,
     rating: 5,
-    imagePath: "",
-  },
-  {
-    name: "Toaster",
-    price: 224.99,
-    discount: 0,
-    rating: 5,
-    imagePath: "",
+    imagePath: "/src/assets/img/image-bamboo-basket.png",
   },
 ];
+
+//containers
+const newArrivals = document.getElementById("new-arrivals");
+const productsContainer = document.createElement("div");
+productsContainer.classList.add("products-container");
+
+// data iteration
+products.forEach((product) => {
+  // product container
+  const div = document.createElement("div");
+  div.classList.add("product");
+
+  // product picture
+  const productImg = document.createElement("img");
+  productImg.classList.add("product-image");
+  productImg.src = product.imagePath;
+  div.appendChild(productImg);
+
+  // rating container
+  const rating = document.createElement("div");
+  rating.classList.add("rating");
+  for (let i = 0; i < product.rating; i++) {
+    const star = document.createElement("img");
+    star.src = "/src/assets/img/star.svg";
+    rating.appendChild(star);
+  }
+
+  div.appendChild(rating);
+
+  // product name
+  const productName = document.createElement("span");
+  productName.classList.add("product-name");
+  productName.textContent = product.name;
+
+  div.appendChild(productName);
+
+  const price = document.createElement("div");
+  price.classList.add("price");
+
+  productsContainer.appendChild(div);
+});
+
+newArrivals.appendChild(productsContainer);

@@ -1,0 +1,43 @@
+/* New arrivals */
+
+.new-arrivals .block-header {
+  padding-inline: var(--padding-horizontal);
+}
+
+/* Products container */
+.products-container {
+  width: 311px;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin: 0 auto;
+}
+
+/* Product */
+.product {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+/* Product image */
+.product-image {
+  width: 231px;
+  height: 308px;
+  margin-bottom: 12px;
+}
+
+/* Ratting */
+.rating {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 4px;
+}
+
+/* Product name */
+.product-name {
+  font-family: var(--font-main);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-p);
+  line-height: var(--lh-p);
+  color: var(--color-text);
+  margin-bottom: 4px;
+}
