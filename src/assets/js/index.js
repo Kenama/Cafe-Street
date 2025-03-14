@@ -94,44 +94,44 @@ const products = [
 ];
 
 //containers
-const newArrivals = document.getElementById("new-arrivals")
-const productsContainer = document.createElement("div")
-productsContainer.classList.add("products-container")
+const newArrivals = document.getElementById("new-arrivals");
+const productsContainer = document.createElement("div");
+productsContainer.classList.add("products-container");
 
 // data iteration
 products.forEach((product) => {
-  // item container
-  const div = document.createElement("div")
-  div.classList.add("product")
+  // product container
+  const div = document.createElement("div");
+  div.classList.add("product");
 
   // product picture
-  const productImg = document.createElement("img")
-  productImg.classList.add("product-image")
-  productImg.src = product.imagePath
-  div.appendChild(productImg)
+  const productImg = document.createElement("img");
+  productImg.classList.add("product-image");
+  productImg.src = product.imagePath;
+  div.appendChild(productImg);
 
   // rating container
-  const rating = document.createElement("div")
-  rating.classList.add("rating")
+  const rating = document.createElement("div");
+  rating.classList.add("rating");
   for (let i = 0; i < product.rating; i++) {
-    const star =  document.createElement("img")
-    star.src = "/src/assets/img/star.svg"
-    rating.appendChild(star)
+    const star = document.createElement("img");
+    star.src = "/src/assets/img/star.svg";
+    rating.appendChild(star);
   }
 
-  div.appendChild(rating)
+  div.appendChild(rating);
 
   // product name
-  const productName = document.createElement("span")
-  productName.classList.add("product-name")
-  productName.textContent = product.name
+  const productName = document.createElement("span");
+  productName.classList.add("product-name");
+  productName.textContent = product.name;
 
-  div.appendChild(productName)
+  div.appendChild(productName);
 
-  const price = document.createElement("div")
-  price.classList.add("price")
+  const price = document.createElement("div");
+  price.classList.add("price");
 
   productsContainer.appendChild(div);
-})
+});
 
-newArrivals.appendChild(productsContainer)
+newArrivals.appendChild(productsContainer);
