@@ -2,19 +2,18 @@
 
 .new-arrivals {
   padding-inline: var(--padding-horizontal);
-  max-width: 375px;
-  overflow-x: scroll;
 }
 
 .products-container {
-  display: flex;
-  gap: 20px;
-  width: auto;
+  width: 375px;
+  overflow-x: auto;
+  white-space: nowrap;
+  border: 2px solid #ccc;
 }
 
-/* .product {
-    position: absolute;
-} */
+.product {
+  display: inline-block;
+}
 
 .product-image {
   width: 231px;
