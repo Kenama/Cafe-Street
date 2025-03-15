@@ -1,4 +1,7 @@
 // Notification bar
+
+// TODO: add close function
+
 // function closeButton() {
 
 // }
@@ -34,26 +37,30 @@ const categoriesContainer = document.getElementById("categories-container");
 
 // data iteration
 categories.forEach((category) => {
-  // item container
+  // category container
   const div = document.createElement("div");
   div.classList.add("category");
   div.style.background = `url("${category.imagePath}")`;
   div.style.height = category.height;
 
-  // header
+  // category header
   const header = document.createElement("h3");
   header.classList.add("category-header");
   header.textContent = category.name;
   div.appendChild(header);
 
-  // button
+  // category button
   const link = document.createElement("a");
   link.textContent = "Shop Now";
   link.classList.add("category-button");
   link.href = category.link;
+
+  // TODO: add arrow
+
+  // appned button to category container
   div.appendChild(link);
 
-  // appending element into container
+  // appending element into main container
   categoriesContainer.appendChild(div);
 });
 
@@ -104,10 +111,46 @@ products.forEach((product) => {
   const div = document.createElement("div");
   div.classList.add("product");
 
-  // product picture
-  const productImg = document.createElement("img");
+  // product picture container
+  const productImg = document.createElement("div");
   productImg.classList.add("product-image");
-  productImg.src = product.imagePath;
+  productImg.style.backgroundImage = `url("${product.imagePath}")`;
+
+  // top
+  const productTop = document.createElement("div");
+  productTop.classList.add("product-top");
+
+  // top right
+  const productTopLeft = document.createElement("div");
+  productTopLeft.classList.add("product-top-left");
+
+  // sign
+  const sign = document.createElement("span");
+  sign.classList.add("sign");
+  sign.textContent = "new";
+  productTopLeft.appendChild(sign);
+
+  // discount
+  if (product.discount != 0) {
+    const discount = document.createElement("span");
+    discount.classList.add("discount");
+    discount.textContent = `-${product.discount}%`;
+    productTopLeft.appendChild(discount);
+  }
+
+  // append top left to top container
+  productTop.appendChild(productTopLeft);
+
+  // Wishlist button
+  const wishlistButton = document.createElement("button");
+  wishlistButton.classList.add("wishlist-button");
+  wishlistButton.style.backgroundImage = 'url("/src/assets/img/heart.svg")';
+  productTop.appendChild(wishlistButton);
+
+  // append product top to image container
+  productImg.appendChild(productTop);
+
+  // append image to product container
   div.appendChild(productImg);
 
   // rating container
@@ -119,6 +162,7 @@ products.forEach((product) => {
     rating.appendChild(star);
   }
 
+  // append rating to product container
   div.appendChild(rating);
 
   // product name
@@ -126,11 +170,32 @@ products.forEach((product) => {
   productName.classList.add("product-name");
   productName.textContent = product.name;
 
+  // append name to product container
   div.appendChild(productName);
 
+  // TODO: add price and discount
   const price = document.createElement("div");
   price.classList.add("price");
 
+  const currentPrice = document.createElement("span");
+  currentPrice.classList.add("current-price");
+
+  if (product.discount === 0) {
+    currentPrice.textContent = `$${product.price}`;
+    price.appendChild(currentPrice);
+  } else {
+    const prevPrice = document.createElement("span");
+    prevPrice.classList.add("prev-price");
+    currentPrice.textContent = `$${(product.price * product.discount) / 100}`;
+    prevPrice.textContent = `$${product.price}`;
+    price.appendChild(currentPrice);
+    price.appendChild(prevPrice);
+  }
+
+  // append price to product container
+  div.appendChild(price);
+
+  // append element to main container
   productsContainer.appendChild(div);
 });
 

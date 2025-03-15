@@ -10,6 +10,8 @@
   overflow-x: auto;
   white-space: nowrap;
   margin: 0 auto;
+  padding-bottom: 40px;
+  margin-bottom: var(--margin-vertical);
 }
 
 /* Product */
@@ -23,7 +25,52 @@
   width: 231px;
   height: 308px;
   margin-bottom: 12px;
+  padding: 16px;
 }
+
+/* Product top */
+.product-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Product top left*/
+.product-top-left {
+  display: inline-flex;
+  flex-direction: column;
+}
+.product-top-left span {
+  padding: 4px 14px;
+  font-family: var(--font-main);
+  font-weight: var(--fw-bolder);
+  font-size: var(--fs-p);
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+/* Sign */
+.sign {
+  color: var(--color-text);
+  background: #fff;
+  margin-bottom: 8px;
+}
+
+/* Discount */
+.discount {
+  color: #fefefe;
+  background: var(--bg-discount);
+}
+
+/* Wishlist button */
+.wishlist-button {
+  width: 26px;
+  height: 26px;
+  background: no-repeat center;
+  background-color: #fff;
+  border-radius: 32px;
+}
+/* .wishlist-button:hover {
+} */
 
 /* Ratting */
 .rating {
@@ -40,4 +87,24 @@
   line-height: var(--lh-p);
   color: var(--color-text);
   margin-bottom: 4px;
+}
+
+/* Price */
+.price {
+  font-family: var(--font-main);
+  font-size: var(--fs-p-sec);
+  line-height: var(--lh-p-sec);
+}
+
+/* Current price */
+.current-price {
+  margin-right: 12px;
+  color: var(--color-text);
+  font-weight: var(--fw-bold);
+}
+
+/* Previous price */
+.prev-price {
+  text-decoration: line-through;
+  color: var(--color-acc);
 }
