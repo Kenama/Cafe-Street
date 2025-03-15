@@ -2,6 +2,7 @@
 
 .categories {
   padding-inline: var(--padding-horizontal);
+  margin-bottom: 32px;
 }
 
 /* Category */

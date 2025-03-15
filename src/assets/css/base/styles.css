@@ -21,6 +21,7 @@
 @import url(/src/assets/css/components/home-components/quote.css);
 @import url(/src/assets/css/components/home-components/categories.css);
 @import url(/src/assets/css/components/home-components/new-arrivals.css);
+@import url(/src/assets/css/components/home-components/cards.css);
 
 /* Varriables */
 /* ---------------------------------------------------------- */
@@ -29,6 +30,7 @@
   /* Colors | bg/color : purpose */
   --bg-black: #232627;
   --bg-neutral: #f3f5f7;
+  --bg-discount: #38cb89;;
   --color-text: #141718;
   --color-gray: #343839;
   --color-acc: #6c7275;
@@ -61,6 +63,7 @@
 
   /* Padding | padding : purpose */
   --padding-horizontal: 32px;
+  --padding-vertical: 32px;
 
   /* Margin | margin : purpose */
   --margin-vertical: 40px;
@@ -84,4 +87,14 @@
 /* Highlight */
 .highlight {
   color: var(--color-acc);
+}
+
+/* Block header */
+.block-header {
+  font-family: var(--font-sec);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
+  letter-spacing: -0.02em;
+  margin-bottom: 40px;
 }
