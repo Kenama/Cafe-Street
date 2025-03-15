@@ -1,5 +1,8 @@
 /* New arrivals */
 
+.new-arrivals {
+  margin-bottom: 32px;
+}
 .new-arrivals .block-header {
   padding-inline: var(--padding-horizontal);
 }
@@ -26,6 +29,7 @@
   height: 308px;
   margin-bottom: 12px;
   padding: 16px;
+  background: no-repeat center;
 }
 
 /* Product top */

@@ -73,28 +73,28 @@ const products = [
   {
     name: "Loveseat Sofa",
     price: 400,
-    discount: 50,
+    discount: 20,
     rating: 5,
     imagePath: "/src/assets/img/image-loveseat-sofa.png",
   },
   {
     name: "Table lamp",
     price: 24.99,
-    discount: 0,
+    discount: 30,
     rating: 5,
     imagePath: "/src/assets/img/image-table-lamp.png",
   },
   {
     name: "Beige table lamp",
     price: 24.99,
-    discount: 0,
+    discount: 10,
     rating: 5,
     imagePath: "/src/assets/img/image-beige-table-lamp.png",
   },
   {
     name: "Bamboo basket",
     price: 24.99,
-    discount: 0,
+    discount: 5,
     rating: 5,
     imagePath: "/src/assets/img/image-bamboo-basket.png",
   },
@@ -186,7 +186,10 @@ products.forEach((product) => {
   } else {
     const prevPrice = document.createElement("span");
     prevPrice.classList.add("prev-price");
-    currentPrice.textContent = `$${(product.price * product.discount) / 100}`;
+    currentPrice.textContent = `$${(
+      product.price -
+      (product.price * product.discount) / 100
+    ).toFixed(2)}`;
     prevPrice.textContent = `$${product.price}`;
     price.appendChild(currentPrice);
     price.appendChild(prevPrice);
@@ -200,3 +203,63 @@ products.forEach((product) => {
 });
 
 newArrivals.appendChild(productsContainer);
+
+// --------------------------------------------
+
+// Cards
+
+// data
+const cards = [
+  {
+    title: "Free Shipping",
+    text: "Order above $200",
+    imagePath: "/src/assets/img/icon-delivery.svg",
+  },
+  {
+    title: "Money-back",
+    text: "30 days guarantee",
+    imagePath: "/src/assets/img/icon-money.svg",
+  },
+  {
+    title: "Secure Payments",
+    text: "Secured by Stripe",
+    imagePath: "/src/assets/img/icon-money.svg",
+  },
+  {
+    title: "24/7 Support",
+    text: "Phone and Email support",
+    imagePath: "/src/assets/img/icon-call.svg",
+  },
+];
+
+// container
+const cardsContainer = document.getElementById("cards-container");
+
+// data iteration
+cards.forEach((card) => {
+  const div = document.createElement("div");
+  div.classList.add("card");
+
+  // card icon
+  const cardIcon = document.createElement("img");
+  cardIcon.classList.add("card-icon");
+  cardIcon.src = card.imagePath;
+  div.appendChild(cardIcon);
+
+  // card header
+  const cardTitle = document.createElement("h4");
+  cardTitle.classList.add("card-title");
+  cardTitle.textContent = card.title;
+  div.appendChild(cardTitle);
+
+  // card text
+  const cardText = document.createElement("p");
+  cardText.classList.add("card-text");
+  cardText.textContent = card.text;
+  div.appendChild(cardText);
+
+  // append card container to the main container
+  cardsContainer.appendChild(div);
+});
+
+// --------------------------------------------

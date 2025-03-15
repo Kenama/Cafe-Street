@@ -1,0 +1,35 @@
+/* Cards */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: var(--padding-horizontal);
+}
+
+/* Card */
+.card {
+  padding: var(--padding-horizontal) 16px;
+  background: var(--bg-neutral);
+  width: 151.5px;
+  font-family: var(--font-main);
+  font-size: var(--fs-p-sec);
+  line-height: var(--lh-p-sec);
+}
+
+/* Card icon */
+.card-icon {
+  margin-bottom: 16px;
+}
+
+/* Card header */
+.card-title {
+  font-family: "Inter", sans-serif;
+  font-weight: var(--fw-bold);
+  color: var(--color-text);
+}
+
+/* Card text */
+.card-text {
+  color: var(--color-acc);
+}
