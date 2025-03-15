@@ -21,6 +21,7 @@
 @import url(/src/assets/css/components/home-components/quote.css);
 @import url(/src/assets/css/components/home-components/categories.css);
 @import url(/src/assets/css/components/home-components/new-arrivals.css);
+@import url(/src/assets/css/components/home-components/cards.css);
 
 /* Varriables */
 /* ---------------------------------------------------------- */
@@ -29,6 +30,7 @@
   /* Colors | bg/color : purpose */
   --bg-black: #232627;
   --bg-neutral: #f3f5f7;
+  --bg-discount: #38cb89;;
   --color-text: #141718;
   --color-gray: #343839;
   --color-acc: #6c7275;
