@@ -1,0 +1,32 @@
+/* Articles */
+
+.articles {
+  padding: 40px var(--padding-horizontal);
+}
+
+/* Article */
+.article {
+  margin-bottom: 24px;
+}
+.article:last-child {
+  margin: 0;
+}
+
+/* Articles header */
+.articles-header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin-bottom: var(--margin-vertical);
+}
+
+/* Article image */
+.article-img {
+  margin-bottom: 16px;
+}
+
+/* Article title */
+.article-title {
+  font-weight: var(--fw-bold);
+  margin-bottom: 8px;
+}

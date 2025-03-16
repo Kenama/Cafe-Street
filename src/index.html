@@ -11,10 +11,15 @@
     <!-- Wrapper -->
     <div class="wrapper">
       <!-- Notification bar -->
-      <div class="notification-bar">
-        <img src="/src/assets/img/icon-discount.svg" alt="discount" />
-        <span>30% off storewide — Limited time!</span>
-        <button class="button-close"></button>
+      <div class="notification-bar" id="notification-bar">
+        <span>
+          <img src="/src/assets/img/icon-discount.svg" alt="discount" />
+          30% off storewide — Limited time!
+        </span>
+        <button
+          class="button-close"
+          onclick="toggleHide('notification-bar')"
+        ></button>
       </div>
       <!-- Header -->
       <div class="header">
@@ -30,7 +35,7 @@
         <!-- Shopping cart -->
         <a href="" class="shopping-cart">
           <img src="/src/assets/img/icon-shopping-cart.svg" alt="" />
-          <span class="counter">2</span>
+          <span class="counter" id="shoping-cart-counter">2</span>
         </a>
       </div>
       <!-- Slider -->
@@ -58,9 +63,33 @@
       <!-- Cards -->
       <div class="cards" id="cards-container"></div>
       <!-- Offer -->
-      <div class="offer"></div>
+      <div class="offer">
+        <img src="/src/assets/img/image-offer.jpg" alt="" class="offer-img" />
+        <!-- Offer content -->
+        <div class="offer-content">
+          <span class="offer-slogan">sale up to 35% off</span>
+          <h2 class="offer-header">HUNDREDS of New lower prices!</h2>
+          <p class="offer-text">
+            It’s more affordable than ever to give every room in your home a
+            stylish makeover
+          </p>
+          <a href="" class="underline-link"
+            >Shop Now
+            <img src="/src/assets/img/arrow.svg" alt="arrow" />
+          </a>
+        </div>
+      </div>
       <!-- Articles -->
-      <div class="articles"></div>
+      <div class="articles" id="articles-container">
+        <!-- Articles header -->
+        <div class="articles-header">
+          <h2>Articles</h2>
+          <a href="" class="underline-link">
+            More Articles
+            <img src="/src/assets/img/arrow.svg" alt="" />
+          </a>
+        </div>
+      </div>
       <!-- Form -->
       <div class="form">
         <!-- Form header -->
@@ -117,7 +146,8 @@
         </div>
       </footer>
     </div>
-
+    <!-- Script -->
     <script src="/src/assets/js/index.js"></script>
+    <script src="/src/assets/js/main.js"></script>
   </body>
 </html>
