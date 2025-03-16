@@ -22,6 +22,8 @@
 @import url(/src/assets/css/components/home-components/categories.css);
 @import url(/src/assets/css/components/home-components/new-arrivals.css);
 @import url(/src/assets/css/components/home-components/cards.css);
+@import url(/src/assets/css/components/home-components/offer.css);
+@import url(/src/assets/css/components/home-components/articles.css);
 
 /* Varriables */
 /* ---------------------------------------------------------- */
@@ -30,9 +32,10 @@
   /* Colors | bg/color : purpose */
   --bg-black: #232627;
   --bg-neutral: #f3f5f7;
-  --bg-discount: #38cb89;;
+  --bg-discount: #38cb89;
   --color-text: #141718;
   --color-gray: #343839;
+  --color-blue: #377dff;
   --color-acc: #6c7275;
 
   /* Fonts | font : purpose */
@@ -72,6 +75,39 @@
 /* General styles */
 /* ---------------------------------------------------------- */
 
+h1,
+h2,
+h3 {
+  font-family: var(--font-sec);
+  font-weight: var(--fw-semibold);
+  color: var(--color-text);
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  letter-spacing: -0.01em;
+  line-height: var(--lh-h1);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  font-size: var(--fs-h3);
+  line-height: var(--lh-h3);
+  letter-spacing: -0.02em;
+}
+
+p {
+  font-family: var(--font-main);
+  font-size: var(--fs-p);
+  line-height: var(--lh-p);
+  color: var(--color-text);
+}
+
 /* Wrapper */
 .wrapper {
   margin: 0 auto;
@@ -97,4 +133,18 @@
   line-height: var(--lh-h2);
   letter-spacing: -0.02em;
   margin-bottom: 40px;
+}
+
+/* Underline-link */
+.underline-link {
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border-bottom: 1px solid var(--color-text);
+  font-family: var(--font-main);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-p-sec);
+  line-height: 171%;
+  color: var(--color-text);
 }

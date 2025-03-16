@@ -1,13 +1,3 @@
-// Notification bar
-
-// TODO: add close function
-
-// function closeButton() {
-
-// }
-
-// --------------------------------------------
-
 // CATEGORIES
 
 // data
@@ -52,7 +42,12 @@ categories.forEach((category) => {
   // category button
   const link = document.createElement("a");
   link.textContent = "Shop Now";
-  link.classList.add("category-button");
+  link.classList.add("underline-link");
+
+  const arrow = document.createElement("img");
+  arrow.src = "/src/assets/img/arrow.svg";
+  link.appendChild(arrow);
+
   link.href = category.link;
 
   // TODO: add arrow
@@ -260,6 +255,62 @@ cards.forEach((card) => {
 
   // append card container to the main container
   cardsContainer.appendChild(div);
+});
+
+// --------------------------------------------
+
+// ARTICLES
+
+// data
+const articles = [
+  {
+    title: "7 ways to decor your home",
+    imagePath: "/src/assets/img/image-home-decor.jpg",
+  },
+  {
+    title: "Kitchen organization",
+    imagePath: "/src/assets/img/image-kitchen-org.jpg",
+  },
+  {
+    title: "Decor your bedroom",
+    imagePath: "/src/assets/img/image-bedroom-decor.jpg",
+  },
+];
+
+// container
+const articlesContainer = document.getElementById("articles-container");
+
+// data iteration
+articles.forEach((article) => {
+  // item container
+  const div = document.createElement("div");
+  div.classList.add("article");
+
+  // article image
+  const articleImg = document.createElement("img");
+  articleImg.classList.add("article-img");
+  articleImg.src = article.imagePath;
+  div.appendChild(articleImg);
+
+  // article title
+  const articleTitle = document.createElement("p");
+  articleTitle.classList.add("article-title");
+  articleTitle.textContent = article.title;
+  div.appendChild(articleTitle);
+
+  // article button
+  const link = document.createElement("a");
+  link.textContent = "Read more";
+  link.classList.add("underline-link");
+
+  const arrow = document.createElement("img");
+  arrow.src = "/src/assets/img/arrow.svg";
+  link.appendChild(arrow);
+
+  div.appendChild(link)
+
+  // append article to articles container
+  articlesContainer.appendChild(div);
 });
 
 // --------------------------------------------

@@ -23,7 +23,6 @@ footer hr {
 
 /* Slogan */
 footer p {
-  font-family: var(--font-main);
   font-size: var(--fs-p-sec);
   line-height: var(--lh-p-sec);
   color: #e8ecef;
@@ -35,7 +34,7 @@ footer nav {
   font-family: var(--font-main);
   font-size: var(--fs-p-sec);
   line-height: var(--lh-p-sec);
-  margin-bottom: 40px;
+  margin-bottom: var(--margin-vertical);
 }
 footer nav li {
   color: #fefefe;

@@ -12,14 +12,9 @@
   padding-bottom: 32px;
 }
 .form-header h3 {
-  font-weight: var(--fw-semibold);
-  font-size: var(--fs-h3);
-  font-family: var(--font-sec);
-  line-height: var(--lh-h3);
   margin-bottom: 8px;
 }
 .form-header p {
-  font-family: var(--font-main);
   font-size: var(--fs-p-sec);
   line-height: var(--lh-p-sec);
 }

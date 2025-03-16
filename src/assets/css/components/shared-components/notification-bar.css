@@ -3,9 +3,9 @@
 .notification-bar {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding-block: 8px;
+  padding: 8px 56.5px;
   background: var(--bg-neutral);
 }
 
@@ -19,8 +19,9 @@
 
 /* Text */
 .notification-bar span {
+  display: flex;
+  gap: 8px;
   font-family: var(--font-main);
   font-size: var(--fs-acc);
-  margin-inline: 8px 22px;
   color: var(--color-gray);
 }
