@@ -1,0 +1,191 @@
+.summary {
+  width: 376px;
+  background: white;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* General Coupon Form Styling */
+.coupon-code-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px 0px;
+  gap: 16px;
+  width: 312px;
+  height: 171px;
+}
+
+/* Title (Have a coupon?) */
+.coupon-title {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: #141718;
+  width: 312px;
+  height: 26px;
+}
+
+/* Subtitle (Add your code for an instant cart discount) */
+.coupon-subtitle {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #6c7275;
+  width: 312px;
+  height: 22px;
+}
+
+/* Coupon Image Placeholder */
+.coupon-image {
+  width: 24px;
+  height: 24px;
+}
+
+/* Input Container */
+.coupon-input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 312px;
+  height: 52px;
+  border: 1px solid #6c7275;
+  padding: 0px 16px;
+  gap: 8px;
+}
+
+/* Input Field */
+.coupon-input {
+  flex-grow: 1;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #6c7275;
+  padding: 0px;
+}
+
+/* Apply Button */
+.apply-btn {
+  width: 49px;
+  height: 25px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1px;
+  letter-spacing: -0.4px;
+  color: #141718;
+  background-color: transparent;
+  border: 0px solid #121212;
+  cursor: pointer;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 1px solid #6c7275;
+  border-radius: 4px;
+}
+
+.input-group .icon {
+  font-size: 18px;
+  color: #6c7275;
+  margin-right: 8px;
+}
+
+.input-group input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #141718;
+}
+
+.apply-btn {
+  background: #141718;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Shipping Options */
+.shipping-options h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #141718;
+  margin-bottom: 12px;
+}
+
+.shipping-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 16px;
+  background: #f3f5f7;
+  border: 1px solid #141718;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.shipping-option input {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  accent-color: #121212;
+}
+
+.option-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #141718;
+}
+
+.option-price {
+  font-size: 14px;
+  font-weight: 600;
+  color: #141718;
+}
+
+/* Order Summary */
+.order-summary .summary-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.order-summary .summary-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 13px 0;
+}
+
+/* Checkout Button */
+.checkout-btn {
+  width: 100%;
+  background: #141718;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.checkout-btn:hover {
+  background: #000000;
+}

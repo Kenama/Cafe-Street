@@ -1,0 +1,103 @@
+/* Product Info Section */
+.product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+  max-width: 311px;
+  padding: 24px 0;
+}
+
+/* Product Measurements */
+.product-info p:first-child {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: #6C7275;
+  margin-bottom: 4px;
+}
+
+.product-info p:nth-child(2) {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #000;
+}
+
+/* Choose Color Section */
+.product-info p:nth-child(3) {
+  display: flex;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #6C7275;
+  gap: 4px;
+}
+
+.simple-arrow {
+  width: 24px;
+  height: 24px;
+}
+
+/* Selected Color */
+.product-info p:nth-child(4) {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000;
+}
+
+/* Color Picker (Swatches) */
+.color-picker {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+}
+
+.color-picker img {
+  width: 72px;
+  height: 72px;
+  border: 1px solid #141718;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.color-picker img:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+.product-loop {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.product-loop div {
+  display: flex;
+  justify-content: space-between;
+  width: 150%;
+}
+
+.product-loop p:first-child {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #6C7275;
+}
+
+.product-loop p:last-child {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+}
