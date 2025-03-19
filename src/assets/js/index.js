@@ -1,4 +1,7 @@
+import { toggleHide } from "./main";
 
+const buttonClose = document.getElementById("button-close");
+buttonClose.addEventListener("click", toggleHide("notification-bar"));
 
 // CATEGORIES
 
