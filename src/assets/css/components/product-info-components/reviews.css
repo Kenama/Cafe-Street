@@ -1,0 +1,97 @@
+.reviews-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  width: 312px;
+}
+
+.reviews-section h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #23262F;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 24px;
+  width: 100%;
+}
+
+.rating {
+  display: flex;
+  align-items: left;
+  gap: 4px;
+}
+
+.rating img {
+  width: 16px;
+  height: 16px;
+}
+
+.review-count {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #141718;
+}
+
+.write-review {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.write-review span {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.write-review strong {
+  font-weight: 600;
+  color: #23262F;
+}
+
+.feedback-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #FEFEFE;
+  border: 2px solid #E8ECEF;
+  border-radius: 16px;
+  padding: 16px 24px;
+  width: 100%;
+}
+
+.feedback-form input {
+  border: none;
+  background: transparent;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #6C7275;
+  width: 100%;
+}
+
+.feedback-form button {
+  background: #141718;
+  width: 32px;
+  height: 32px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+}
+
+.feedback-form button img {
+  width: 24px;
+  height: 24px;
+}
