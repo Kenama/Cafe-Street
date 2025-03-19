@@ -1,0 +1,28 @@
+/* Offer */
+
+/* Offer content */
+.offer-content {
+  padding: 58.5px var(--padding-horizontal);
+  background: var(--bg-neutral);
+}
+
+/* Offer slogan */
+.offer-slogan {
+  font-family: var(--font-main);
+  font-weight: var(--fw-bolder);
+  font-size: var(--fs-p);
+  text-transform: uppercase;
+  color: var(--color-blue);
+  margin-bottom: 16px;
+  display: block;
+}
+
+/* Offer header */
+.offer-header {
+  margin-bottom: 16px;
+}
+
+/* Offer text */
+.offer-text {
+  margin-bottom: 24px;
+}
