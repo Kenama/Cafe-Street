@@ -6,6 +6,7 @@
     <title>3legant | Home</title>
     <!-- Link -->
     <link rel="stylesheet" href="/src/assets/css/base/styles.css" />
+    <link rel="stylesheet" href="product-info.css">
   </head>
   <body>
     <!-- Wrapper -->
@@ -55,14 +56,42 @@
           <span class="curr-price">300$</span>
           <span class="orig-price">400%</span>
         </div>
-        <div class="timer">
-          <p>sjhhashdfasjdfjkashdfja (timer)</p>
+        <!-- timer -->
+        <div class="timer-wrapper">
+          <div class="offer-expiry">Offer expires in:</div>
+          <div class="timer">
+            <div class="timer-block">
+              <div class="timer-number">
+                <div id="days" class="timer-value"></div>
+              </div>
+              <div class="timer-label">Days</div>
+            </div>
+            <div class="timer-block">
+              <div class="timer-number">
+                <div id="hours" class="timer-value"></div>
+              </div>
+              <div class="timer-label">Hours</div>
+            </div>
+            <div class="timer-block">
+              <div class="timer-number">
+                <div id="minutes" class="timer-value"></div>
+              </div>
+              <div class="timer-label">Minutes</div>
+            </div>
+            <div class="timer-block">
+              <div class="timer-number">
+                <div id="seconds" class="timer-value"></div>
+              </div>
+              <div class="timer-label">Seconds</div>
+            </div>
+          </div>
         </div>
+        <!-- prod-info -->
         <div class="product-info">
           <p>Measurements</p>
           <p>17 1/2x20 5/8 "</p>
           <p>
-            Choose color<img src="/src/assets/img/icon-simple-arr.svg" alt="" />
+            Choose color<img src="/src/assets/img/icon-simple-arr.svg" alt="" class="simple-arrow" />
           </p>
           <p>Black</p>
           <div class="color-picker">
@@ -72,12 +101,17 @@
             <img src="/src/assets/img/image-table-white.jpg" alt="table" />
           </div>
           <div class="product-loop">
-            <p>SKU</p>
-            <p>11111</p>
-            <p>CATEGORY</p>
-            <p>Living Room, Bedroom</p>
+            <div>
+              <p>SKU</p>
+              <p>11111</p>
+            </div>
+            <div>
+              <p>CATEGORY</p>
+              <p>Living Room, Bedroom</p>
+            </div>
           </div>
         </div>
+        <!-- tabs -->
         <div class="tabs">
           <p>
             Description <img src="/src/assets/img/icon-simple-arr.svg" alt="" />
@@ -90,24 +124,35 @@
             <img src="/src/assets/img/icon-simple-arr.svg" alt="" />
           </p>
         </div>
+        <!-- feedback -->
         <div class="reviews-section">
+          <h2>Customer Reviews</h2>
           <div class="reviews">
-            <p>Customer review</p>
-            <img src="/src/assets/img/star.svg" alt="star" />
-            <img src="/src/assets/img/star.svg" alt="star" />
-            <img src="/src/assets/img/star.svg" alt="star" />
-            <img src="/src/assets/img/star.svg" alt="star" />
-            <img src="/src/assets/img/star.svg" alt="star" />
-            <p>11 Reviews</p>
+              <div class="rating">
+                  <img src="/src/assets/img/star.svg" alt="star">
+                  <img src="/src/assets/img/star.svg" alt="star">
+                  <img src="/src/assets/img/star.svg" alt="star">
+                  <img src="/src/assets/img/star.svg" alt="star">
+                  <img src="/src/assets/img/star.svg" alt="star">
+                  <span class="review-count">11 Reviews</span>
+              </div>
+              <div class="write-review">
+                  <span>Be the first to review</span>
+                  <strong>Tray Table</strong>
+              </div>
           </div>
-          <div class="feedback">
-            <form action="">
-              <input type="text" placeholder="Share your thoughts" />
-              <input type="submit" />
-            </form>
-          </div>
-        </div>
-        <div class="color"></div>
+          <form class="feedback-form">
+              <input type="text" placeholder="Share your thoughts">
+              <button type="submit">
+                  <img src="/src/assets/img/icon-simple-arr.svg" alt="send">
+              </button>
+          </form>
+      </div>
+      <!-- comments -->
+       <div class="comments-container" id="comments-container">
+        <h2 class="comments-header">Reviws 11</h2>
+       </div>
+      <div class="color"></div>
       </div>
       <!-- Slider -->
       <div class="slider"></div>
@@ -177,5 +222,7 @@
         </div>
       </footer>
     </div>
+    <!-- script -->
+     <script src="/src/assets/js/product-info.js"></script>
   </body>
 </html>

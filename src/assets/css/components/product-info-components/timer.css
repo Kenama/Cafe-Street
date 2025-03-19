@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Auto layout */
+.timer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px 0;
+  gap: 8px;
+  width: 311px;
+  height: 166px;
+  border-bottom: 1px solid #E8ECEF;
+}
+
+/* Timer */
+.timer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 288px;
+  height: 80px;
+}
+
+/* Timer Block */
+.timer-block {
+  width: 60px;
+  height: 80px;
+  position: relative;
+}
+
+/* Timer Cells */
+.timer-number {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 0;
+  top: 0;
+  background: #F3F5F7;
+}
+
+.timer-value {
+  position: absolute;
+  width: 44px;
+  height: 38px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: -0.6px;
+  color: #141718;
+}
+
+.timer-label {
+  position: absolute;
+  width: 46px;
+  height: 20px;
+  left: 50%;
+  top: 60px;
+  transform: translateX(-50%);
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: #6C7275;
+}
+
+/* Offer expires in text */
+.offer-expiry {
+  width: 360px;
+  height: 26px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #343839;
+  text-align: left;
+}
