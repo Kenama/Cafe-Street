@@ -17,7 +17,7 @@
 @import url(/src/assets/css/components/shared-components/form.css);
 @import url(/src/assets/css/components/shared-components/footer.css);
 
-/* Home partials */
+/* Home page partials */
 @import url(/src/assets/css/components/home-components/quote.css);
 @import url(/src/assets/css/components/home-components/categories.css);
 @import url(/src/assets/css/components/home-components/new-arrivals.css);
@@ -33,6 +33,11 @@
 @import url(/src/assets/css/components/product-info-components/reviews.css);
 @import url(/src/assets/css/components/product-info-components/tabs.css);
 @import url(/src/assets/css/components/product-info-components/timer.css);
+
+/* cart page partials */
+@import url(/src/assets/css/components/cart-components/cart-header.css);
+@import url(/src/assets/css/components/cart-components/cart.css);
+@import url(/src/assets/css/components/cart-components/summary.css);
 
 /* Varriables */
 /* ---------------------------------------------------------- */
