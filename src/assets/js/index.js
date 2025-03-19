@@ -1,3 +1,8 @@
+import { toggleHide } from "./main";
+
+const buttonClose = document.getElementById("button-close");
+buttonClose.addEventListener("click", toggleHide("notification-bar"));
+
 // CATEGORIES
 
 // data
@@ -168,7 +173,7 @@ products.forEach((product) => {
   // append name to product container
   div.appendChild(productName);
 
-  // TODO: add price and discount
+  // price
   const price = document.createElement("div");
   price.classList.add("price");
 
@@ -307,7 +312,7 @@ articles.forEach((article) => {
   arrow.src = "/src/assets/img/arrow.svg";
   link.appendChild(arrow);
 
-  div.appendChild(link)
+  div.appendChild(link);
 
   // append article to articles container
   articlesContainer.appendChild(div);
